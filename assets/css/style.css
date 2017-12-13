@@ -307,4 +307,77 @@
 		margin: 0;
 	}
 
+@media screen and (max-width: 1060px) {
+	
+	body article {
+		float: none;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 780px;
+	}
+	
+	body main {
+		width: 100%;
+	}
+	
+	body aside {
+		clear: both;
+		float: none;
+		margin: 0 auto;
+	}
+	
+	header {
+		width: 100%;
+	}
+	
+	article ul {
+		width: 590px;
+		margin: 0 auto;
+	}
+	
+}
 
+@media screen and (max-width: 800px) {
+	#portrait {
+		display: block;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 1em;
+	}
+	
+	body article {
+		width: 90%;
+	}
+	
+	nav.mainnav {
+		display: block;
+		position: static;
+		margin: 0 auto;
+		text-align: center;
+	}
+	#bioname {
+		display: block;
+		text-align: center;
+		margin-left: auto;
+		margin-rigt: auto;
+	}
+	
+	article ul {
+		width: 100%;
+		margin: 0 auto;
+	}
+	
+	.portfolio li:nth-child(odd), 
+	.portfolio li:nth-child(even) {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+	
+	article h1 {
+		text-align: center;
+	}
+	
+}
