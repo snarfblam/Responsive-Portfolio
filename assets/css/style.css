@@ -4,8 +4,8 @@
         color: #777777;
         background: #ffffff;
         font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-		/* for sticky footer: */
-		height: 100%; 
+        /* for sticky footer: */
+        height: 100%; 
     }
 
     h1, h2, h3, h4, h5, h6 {
@@ -20,7 +20,7 @@
         line-height: 20px;
         font-weight: bold;
     }
-	
+    
     h2 {
         font-size: 22px;
         vertical-align: middle;
@@ -67,8 +67,8 @@
     #bioname h1 {
         color: white;
     }
-	
-	.headerContainer {
+    
+    .headerContainer {
         background: white;
         width: 100%;
         border: 1px solid #cccccc;
@@ -95,22 +95,22 @@
         color: #999999;
         text-decoration: none;
         font-size: 1.2em;
-		position: relative;
+        position: relative;
     }
-	
-	nav.mainnav a:visited { 
-		color: #BBB;
-	}
-	
-	nav.mainnav a:hover { 
-		text-decoration: underline;
-		color: black;
-		top: -1px;
-	}
-	
-	nav.mainnav a:active {
-		color: orange;
-	}
+    
+    nav.mainnav a:visited { 
+        color: #BBB;
+    }
+    
+    nav.mainnav a:hover { 
+        text-decoration: underline;
+        color: black;
+        top: -1px;
+    }
+    
+    nav.mainnav a:active {
+        color: orange;
+    }
     
     
     
@@ -120,14 +120,14 @@
         width: 100%;
         border-top: 1px solid #cccccc;
         box-sizing: border-box;
-	}
+    }
 
     main {
         width: 960px;
         margin: 0 auto;
     }
-		
-	main article, main aside {
+        
+    main article, main aside {
         background: white;
         margin: 38px 0;
         padding: 0 30px 30px 30px;
@@ -153,11 +153,11 @@
     }
 
     aside h2 {
-		/* GAH STOP WRAPPING */
+        /* GAH STOP WRAPPING */
         overflow: hidden;
         white-space: nowrap;
     }
-	
+    
     #portrait {
         float: left;
         margin-right: 1em;
@@ -165,41 +165,41 @@
     
     .contactLinks {
         text-align: center;
-		position: relative;
+        position: relative;
     }
-	
+    
     aside a {
         text-decoration: none;
-		position: relative;
+        position: relative;
     }
-	
+    
     aside a img {
         width: 60px;
         height: 60px;
         margin: 3px;
-		/* Animation */
-			position: relative;
-			top: 0;
-			left: 0;
-			box-shadow: none;
-			outline: none;
-			transition: top 0.2s, left 0.2s, box-shadow .3s, outline .5s; 
-	}
-		
-	aside a:hover img { 
-		/* Animation */
-			box-shadow: 2px 2px 2px #444, 5px 5px 5px #999;
-			outline: 1px solid black;
-			outline-offset: -1px;
-			top: -10px;
-			left: 0px;
-			transition: top 0.2s, left 0.2s, box-shadow .2s, outline .2s;
-	}
-	
-	aside a:active img {
-		outline: 1px solid orange;
-		outline-offset: -1px;
-	}
+        /* Animation */
+            position: relative;
+            top: 0;
+            left: 0;
+            box-shadow: none;
+            outline: none;
+            transition: top 0.2s, left 0.2s, box-shadow .3s, outline .5s; 
+    }
+        
+    aside a:hover img { 
+        /* Animation */
+            box-shadow: 2px 2px 2px #444, 5px 5px 5px #999;
+            outline: 1px solid black;
+            outline-offset: -1px;
+            top: -10px;
+            left: 0px;
+            transition: top 0.2s, left 0.2s, box-shadow .2s, outline .2s;
+    }
+    
+    aside a:active img {
+        outline: 1px solid orange;
+        outline-offset: -1px;
+    }
 
 
 /* Portfolio Items */
@@ -215,6 +215,12 @@
         position: relative;
         display: inline-block;
         margin-bottom: 40px;
+        border: 1px solid #4AAAA6;
+        background: black;
+    }
+    
+    .portfolio li img {
+        max-width: 100%;
     }
     
     .portfolio li:nth-child(odd) {
@@ -223,7 +229,7 @@
     
     .portfolio li h3 {
         position: absolute;
-        top: 136px;
+        bottom: 10px;
         line-height: 60px;
         vertical-align: middle;
         text-align: center;
@@ -231,18 +237,18 @@
         background: #4aaaa5;
         color: white;
         font-size: 22px;
-		transition: background 0.25s;
-	}
-	
-	.portfolio li:hover {
-		/* outline: 1px solid orange; */
-		/* outline-offset: -1px; */
-	}
-	
-	.portfolio li:hover h3 {
-		background: orange;
-		transition: background 0.25s;
-	}
+        transition: background 0.25s;
+    }
+    
+    .portfolio li:hover {
+        /* outline: 1px solid orange; */
+        /* outline-offset: -1px; */
+    }
+    
+    .portfolio li:hover h3 {
+        background: orange;
+        transition: background 0.25s;
+    }
     
 /* Contact Form Items */
     
@@ -282,102 +288,235 @@
         color: #cccccc;
         clear: both;
         line-height: 94px;
-		height: 94px; /* (for reference, set below in sticky footer styles) */
+        height: 94px; /* (for reference, set below in sticky footer styles) */
         vertical-align: middle;
         text-align: center;
         border-top: 8px solid #4aaaa5;
     }
-	
-	footer p {
-		margin: 0 auto;
-	}
+    
+    footer p {
+        margin: 0 auto;
+    }
 
 /* Sticky Footer */
 
-	.allButFooter {
-		min-height: 100%;
-		margin: 0 0 -102px 0;
-		
-		background-image: url("../images/bluefabric.png");
+    .allButFooter {
+        min-height: 100%;
+        margin: 0 0 -102px 0;
+        
+        background-image: url("../images/bluefabric.png");
         background-size: 100%;
-	}
-	
-	footer, .footerPlaceholder {
-		height: 94px;
-		margin: 0;
-	}
+    }
+    
+    footer, .footerPlaceholder {
+        height: 94px;
+        margin: 0;
+    }
 
-@media screen and (max-width: 1060px) {
-	
-	body article {
-		float: none;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		width: 780px;
-	}
-	
-	body main {
-		width: 100%;
-	}
-	
-	body aside {
-		clear: both;
-		float: none;
-		margin: 0 auto;
-	}
-	
-	header {
-		width: 100%;
-	}
-	
-	article ul {
-		width: 590px;
-		margin: 0 auto;
-	}
-	
-}
+/* Responsive: >= tablet, < large monitor */
+    @media screen and (max-width: 980px) {
+        
+        /* Remove horizontal margins from header */
+        /* header { */
+            /* width: 100%; */
+        /* } */
+        
+        
+        /* Portrait to become block-left item with auto margins */
+        #portrait {
+            display: block;
+            float: none;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 1em;
+            max-width: 100%;
+        }    
+        
+        /* Arrange article and aside vertically */
+        body article {
+            /* float: none; */
+            
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 420px;
+        }
+        
+        body main {
+            /* width: 100%; */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        body aside {
+            /* clear: both; */
+            /* float: none; */
+            /* margin-left: auto; */
+            /* margin-right: auto; */
+            float: left;
+            margin-left: 20px;
+        }
+        
+        .mainContainer {
+            width: 710px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Portfolio items to be centered when they collapse into single column */
+        article ul {
+            margin: 0 auto;
+        }       
+        
+        header {
+            width: 710px;
+        }
+        
+        .portfolio {
+            display: inline-block;
+            text-align: center;
+            width: fit-content;
+        }
+        
+        .portfolio li {
+            display: inline-block;
+        }
+        
+        /* Remove margins for centering */
+        .portfolio li:nth-child(odd), 
+        .portfolio li:nth-child(even) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    
+    
+/* Responsive: >= phone(landscape), < tablet */
 
-@media screen and (max-width: 800px) {
-	#portrait {
-		display: block;
-		float: none;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 1em;
-	}
-	
-	body article {
-		width: 90%;
-	}
-	
-	nav.mainnav {
-		display: block;
-		position: static;
-		margin: 0 auto;
-		text-align: center;
-	}
-	#bioname {
-		display: block;
-		text-align: center;
-		margin-left: auto;
-		margin-rigt: auto;
-	}
-	
-	article ul {
-		width: 100%;
-		margin: 0 auto;
-	}
-	
-	.portfolio li:nth-child(odd), 
-	.portfolio li:nth-child(even) {
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
-	}
-	
-	article h1 {
-		text-align: center;
-	}
-	
-}
+    @media screen and (max-width: 768px) {
+        header {
+            width: auto;
+        }
+        
+        nav.mainnav {
+            margin-left: auto;
+        }
+        
+        .mainContainer {
+            width: auto;
+        }
+
+        
+        /* Article, aside to scale with viewport */
+        body article, body aside {
+            width: 95%;
+            display: block;
+            float: none;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        
+        main {
+            width: 95%;
+        }
+        
+        /* (Necessary for centering <li>s) */
+        article ul {
+            display: inline-block;
+            text-align: center;
+        }
+
+        /* Remove margins for centering */
+        .portfolio li:nth-child(odd) {
+            margin-left: auto;
+            margin-right: 15px;
+            max-width: 45%;
+        }
+        
+        .portfolio li:nth-child(even) {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 45%;
+        }
+        
+        /* Centered headings look better in the vertical arrangement */
+        article h1, aside h2 {
+            text-align: center;
+        }
+        
+            
+        #portrait {
+            float: left;
+            margin-right: 1.5em;
+            display: inline;
+        }
+    }
+
+    
+/* Responsive: < phone(landscape) */
+
+    @media screen and (max-width: 640px) {
+
+        /* Portrait to become block-left item with auto margins */
+        #portrait {
+            display: block;
+            float: none;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 1em;
+            max-width: 100%;
+        }    
+                
+        /* Break header into two rows */
+        nav.mainnav {
+            display: block;
+            position: static;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        #bioname {
+            display: block;
+            text-align: center;
+            margin-left: auto;
+            margin-rigt: auto;
+        }
+        
+        nav.mainnav {
+            line-height: 60px;
+        }
+                
+        /* Remove styles for two-per-row */
+        .portfolio li:nth-child(odd), 
+        .portfolio li:nth-child(even) {
+            display: inline-block;
+            max-width: 100%;
+        }
+        
+        .portfolio {
+            text-align: center;
+        }
+        
+        /* Scale portfolio items to window */
+        .portfolio li {
+            box-sizing: border-box;
+            width: 100%;
+            height: auto;
+            padding-bottom: 0;
+        }
+        
+        .portfolio li img {
+            width: 100%;
+            display: block;
+        }
+        
+        .portfolio li a {
+            line-height: 0;
+        }
+        
+        #portrait {
+            width: 100%;
+            
+        }
+    }
