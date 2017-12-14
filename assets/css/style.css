@@ -241,8 +241,8 @@
     }
     
     .portfolio li:hover {
-        /* outline: 1px solid orange; */
-        /* outline-offset: -1px; */
+        outline: 1px solid orange;
+        outline-offset: -1px;
     }
     
     .portfolio li:hover h3 {
@@ -316,12 +316,6 @@
 /* Responsive: >= tablet, < large monitor */
     @media screen and (max-width: 980px) {
         
-        /* Remove horizontal margins from header */
-        /* header { */
-            /* width: 100%; */
-        /* } */
-        
-        
         /* Portrait to become block-left item with auto margins */
         #portrait {
             display: block;
@@ -332,57 +326,37 @@
             max-width: 100%;
         }    
         
-        /* Arrange article and aside vertically */
+        /* Rreduce size of main content */
         body article {
-            /* float: none; */
-            
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
             width: 420px;
         }
         
-        body main {
-            /* width: 100%; */
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
+        /* Aside on same row, margin between  */
         body aside {
-            /* clear: both; */
-            /* float: none; */
-            /* margin-left: auto; */
-            /* margin-right: auto; */
             float: left;
             margin-left: 20px;
         }
         
+        /* Reduce size of content */
         .mainContainer {
             width: 710px;
             margin-left: auto;
             margin-right: auto;
-        }
+        }   
         
-        /* Portfolio items to be centered when they collapse into single column */
-        article ul {
-            margin: 0 auto;
-        }       
-        
+        /* Reduce size of header */
         header {
             width: 710px;
         }
         
+        /* Portfolio items to be centered when they collapse into single column */
         .portfolio {
-            display: inline-block;
+            /* display: inline-block; */
             text-align: center;
             width: fit-content;
         }
         
-        .portfolio li {
-            display: inline-block;
-        }
-        
-        /* Remove margins for centering */
+        /* Remove margins for proper centering */
         .portfolio li:nth-child(odd), 
         .portfolio li:nth-child(even) {
             margin-left: auto;
@@ -394,14 +368,18 @@
 /* Responsive: >= phone(landscape), < tablet */
 
     @media screen and (max-width: 768px) {
+        
+        /* Size header to window */
         header {
             width: auto;
         }
         
+        /* Maintain gap between name and nav */
         nav.mainnav {
             margin-left: auto;
         }
         
+        /* Size content container to window */
         .mainContainer {
             width: auto;
         }
@@ -417,6 +395,7 @@
             
         }
         
+        /* Size main content to container */
         main {
             width: 95%;
         }
@@ -427,7 +406,7 @@
             text-align: center;
         }
 
-        /* Remove margins for centering */
+        /* Restore even/odd margins */
         .portfolio li:nth-child(odd) {
             margin-left: auto;
             margin-right: 15px;
@@ -445,7 +424,7 @@
             text-align: center;
         }
         
-            
+        /* Revert to float     */
         #portrait {
             float: left;
             margin-right: 1.5em;
@@ -515,6 +494,7 @@
             line-height: 0;
         }
         
+        /* Scale portrait to container */
         #portrait {
             width: 100%;
             
